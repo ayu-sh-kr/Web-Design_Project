@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+
+nav{
+    position: fixed;
+    /*margin: 0 3vw;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 10vh;
+    left: 5vw;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .back{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .back a{
+    margin-left: 2vw;
+    font-size: 3vw;
+
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+nav ul li{
+    padding: 2%;
+    border-radius: 5%;
+    transition: 0.2s;
+}
+
+nav ul li:hover{
+    background: #ED0055;
+}
+
+section{
+    /*background: url("image/radial-background.png") no-repeat;*/
+    background: -ms-radial-gradient(#ED0055, #d3cfcf);
+    background-size: cover;
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: red;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(30% at left 100%);
+    filter: blur(5px);
+}
+
+.page1 .container{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    background: url("image/background overlay.png") no-repeat;
+    background-size: contain;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page1 .container .card{
+    height: 80%;
+    width: 30%;
+    /*backdrop-filter: blur(10px);*/
+    border-radius: 10px;
+    position: relative;
+}
+
+.page1 .container .card .img-1, .img-2, .img-3{
+    height: 60%;
+    width: 99%;
+    position: absolute;
+    top: 15%;
+    /*border: 2px solid grey;*/
+    /*border-radius: 20%;*/
+}
+.page1 .container .card .img-1{
+    background: url("image/vehicles/wp10479443-1999-nissan-skyline-gt-r-r34-wallpapers 1.png") no-repeat;
+    background-size: contain;
+}
+.page1 .container .card .img-2{
+    background: url("image/vehicles/wp7490903-gtr-car-wallpapers 1.png") no-repeat;
+    background-size: contain;
+}
+.page1 .container .card .img-3{
+    background: url("image/vehicles/unsplash_PSctagTn_28.png") no-repeat;
+    background-size: contain;
+}
+
+.page1 .container .card .text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+}
+
+.page1 .container .card .text h2{
+    font-family: Inter, serif;
+    color: white;
+    margin-left: 2vw;
+}
+
+.btn{
+
+}
+.page1 .container .card .text .btn a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 20px;
+    background: red;
+    border-radius: 5px;
+    font-size: larger;
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.page1 .container .card:hover .text .btn a{
+    opacity: 1;
+}
+.page1 .container .card .text .btn:hover a{
+    scale: 1.2;
+    /*transform: translateY(20px);*/
+}
+.line{
+    height: 70%;
+    width: 0.2%;
+    border-radius: 2px;
+    background: lightgrey;
+}
+
+.page2{
+    background: radial-gradient(circle at center 50%, greenyellow 0, black 99%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /*white-space: pre-wrap;*/
+}
+
+/*.page2::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    background: radial-gradient(circle at left 100%, #89da0c 30%, #2f343d 50%, black 60%);*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    clip-path: circle(30% at left 100%);*/
+/*    backdrop-filter: blur(5px);*/
+/*}*/
+
+.page2 .relative {
+    position: relative;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2 .relative{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.page2 .relative .img{
+    height: 40%;
+    width: 90%;
+    /*position: absolute;*/
+    overflow: hidden;
+    top: 0;
+    margin-top: -5%;
+}
+.page2 .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*margin-top: -20px;*/
+}
+.page2 .relative .text{
+    color: whitesmoke;
+    font-family: "Bell MT", serif;
+    font-size: 1.1em;
+}
+
+
+.page2 .card  a{
+    font-size: 1.5em;
+    padding: 0.3em 1.3em;
+    background: greenyellow;
+    border-radius: 0.3em;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 black;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Roboto Light", serif;
+    font-weight: bolder;
+}
+
+.page2 .card  a:hover{
+    transition: 0.2s ease-out;
+    transform: scale(1.08);
+}
+.page2 .absolute{
+    height: 70%;
+    width: 30%;
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.page2 .absolute .img{
+    position: absolute;
+    bottom: 0;
+}
+
+.page2 .relative .text .p{
+    font-size: .89em;
+    margin: 10px;
+    text-align: center;
+}
+.page3{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page3 .card{
+    position: relative;
+    color: white;
+    width: 50%;
+    height: 100%;
+}
+.page3 .st{
+    /*color: red;*/
+    text-align: left;
+    background: radial-gradient(circle at left 100%, royalblue 20%, black 30%);
+    transition: 0.5s;
+}
+
+/*.page3 .card:hover{*/
+/*    transform: scale(1.03);*/
+/*}*/
+
+.page3 .st .heading{
+    font-size: 4em;
+    font-weight: bolder;
+    color: #003dff;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    font-family: "Inter", fantasy;
+}
+
+.page3 .en{
+    text-align: left;
+    background: black;
+
+}
+
+.page3 .st .p{
+    margin-left: 1rem;
+    margin-top: 3rem;
+    text-align: left;
+    height: 5rem;
+    width: 20rem;
+    font-size: 0.97em;
+    font-family: Inter, fantasy;
+}
+
+.page3 .st a{
+    background: blue;
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    padding: 1.07rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.page3 .st .img{
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.page3 .st .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page3 .en .img{
+    position: relative;
+    left: 10%;
+    height: 23rem;
+    width: 25rem;
+}
+
+.page3 .en .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.page3 .en .subheading{
+    font-family: Inter, fantasy;
+    color: royalblue;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+.page3 .en .heading h3{
+    font-family: Inter, fantasy;
+    color: #164cee;
+    font-size: 3rem;
+    margin-left: 1em;
+    /*margin-top: 0.5em;*/
+}
+
+.page3 .en .heading h3 span{
+    font-family: Inter, fantasy;
+    color: #164cee;
+    font-size: 1.7rem;
+}
+
+.page3 .en .p{
+    text-align: left;
+    font-family: Inter, fantasy;
+    height: 5rem;
+    width: 20rem;
+    margin-left: 1em;
+    /*transform: translateX(70%);*/
+}
+
+.page3 .en .heading h4{
+    color: lightgrey;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-top: -1em;
+}
