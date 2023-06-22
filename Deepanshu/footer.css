@@ -1,0 +1,113 @@
+footer{
+    width: 100%;
+    height: 85vh;
+    /* background-color: black; */
+      background-image: linear-gradient(to bottom,rgba(31, 6, 7, 0.9),rgba(0, 0, 0, 1));
+    font-family: poppins;
+    white-space: nowrap;
+}
+.footerheadings{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+}
+.headings{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    /* background: white; */
+    border: 1px solid rgba(170, 168, 168, 0.2);
+    width: 250px;
+}
+.texts{
+    color: rgb(255, 255, 255);
+    font-family: poppins; 
+    margin-left: 10px;
+}
+.headings>img{
+    width: 40px;
+    height: 40px;
+}
+.texts>h1{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.texts>p{
+    font-size: 12px;
+    text-align: left;
+    color: rgba(217, 222, 227,0.7);
+}
+.footercontent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.columns>h1{
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: white;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    transition-duration: .2s;
+    transition: ease-in;
+}
+.columns>ul>li>a{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    font-size: 12px;
+}
+.columns>ul>li>a:hover{
+    color: red;
+    transition: .3s ease-out;
+}
+.columns>ul>li{
+  margin-top: 10px;
+}
+.columns>p{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+
+.emailsearchbar{
+    margin-top: 10px;
+    width: 75%;
+    height: 6vh;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    letter-spacing: 1px;
+    font-family:Arial;
+    background-color:  rgb(29, 29, 41);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.emailbtn{
+    padding: 5% 7% 4%;
+    background-color: red;
+    margin-left: -2%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px ;
+}
+.emailbtn:hover{
+    opacity: .7;
+}
+.emailbtn>img{
+    width: 16px;
+    height: 18px;
+    margin-bottom: -4px;
+}

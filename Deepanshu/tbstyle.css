@@ -1,0 +1,154 @@
+*{
+      margin:0;
+	padding:0;
+	/* background-image:url('quality-pic-3.png'); */
+	box-sizing: border-box;
+    font-family: poppins;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+/* .background-image{
+    background-image: url('C:\Users\sandeep\Videos\dead5.jpg');
+} */
+
+body{
+	min-height:100vh;
+    /* <image src:"C:\Users\sandeep\Videos\pexels-designecologist-1510659 - Copy.jpg" ; */
+	background-image: url('quality-pic-3.png');
+    /* background-repeat: no-repeat; */
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+	background-color:#fff5;
+
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+main.table{
+	width:82vw;
+	height:90vh;
+	background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0.4rem 0.8rem 20px #0005;
+    border-radius: 0.8rem;
+    overflow: hidden;	
+}
+
+.table_header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: 0.8rem 1rem;
+}
+
+.table_body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    
+    margin: 00.8rem auto;
+    border-radius: 0.6rem;
+
+    overflow: auto;
+}
+
+.table_body ::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body ::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+
+.table_body :hover ::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+table{
+	width: 100%;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:#d5d1dede;
+}
+
+tbody :nth-child(even){
+    background-color: #0000000b;
+}
+
+tbody tr:hover{
+    background-color: #fff6;
+}
+
+.status {
+    padding: 0.5rem 10;
+    border-radius: 2rem;
+    text-align: center; 
+}
+
+.status.KIET {
+    background-color: #86e49d;
+    color: rgb(255, 246, 246) ;
+}
+
+.status.ABESIT {
+    background-color: #eb31bc;
+    color: rgb(255, 255, 255) ;
+}
+
+.status.IITD {
+    background-color: #37eb31;
+    color: rgb(233, 243, 233) ;
+}
+
+.status.ITS {
+    background-color: #f37f13;
+    color: rgb(233, 243, 233) ;
+}
+
+.status.HRM {
+    background-color: #9d20a8;
+    color: rgb(233, 243, 233) ;
+}
+
+.status.VIT {
+    background-color: #20dce2;
+    color: rgb(233, 243, 233) ;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+    }    
+}
+
+
+
+
+
+
+

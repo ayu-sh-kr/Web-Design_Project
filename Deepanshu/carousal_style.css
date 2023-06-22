@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+.swiper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-image: radial-gradient(circle 20em,rgb(4, 72, 199) 10%, rgb(15, 13, 13) );  
+    height: 100vh;
+    width: 100%;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    /* height: 65%; */
+    
+}
+
+.card{
+    width: 20em;
+    height: 90%;
+    /* position: relative; */
+    /* background: #fff;  */
+    /* backdrop-filter: blur(10px); */
+    color: #fff;
+    /* margin: 20px 0; */
+    /* box-shadow: 0 0 20px rgb(231, 231, 231);  */
+    padding: 2em, 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+   background: rgba(4, 4, 50,0.2);
+
+}
+
+.card__image{
+    
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+    padding: 3px;
+    margin-bottom: 2em;
+
+    position: relative;
+    z-index: 100;
+    padding: 5px;
+
+    
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+
+}
+
+.card__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative;
+    z-index: 100;
+    padding: 30px; */
+   
+}
+
+.card__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+}
+
+
+.card__name{
+    color:rgb(235, 15, 8);
+    font-family:Impact;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    /* flex-direction: column; */
+}
+
+.card__text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+}
+
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 28%;
+    width: 100%;
+
+    /* background: #e9240a; */
+    /* background: rgb(0, 174, 255); */
+    background-image: radial-gradient(circle 5em,rgb(0, 0, 101,.6),rgba(24, 24, 70, 0.4));
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+.card .button button{
+    background: #0099ff;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: grab;
+}
+
+
+.button button:hover{
+   opacity: .5;
+
+}
+
+/* .swiper{
+    width: 100%;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+} */
+

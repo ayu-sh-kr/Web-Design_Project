@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="siginstyle.css">
+  <script src="validation.js" defer></script>
+  <title>Wd Projecttt</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        
+       
+        <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="wd.html" onsubmit="return validation()">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="usernamedetail">
+                        <label for="">Username</label>
+                    </div>
+                    <p id="usererror" class="error" style="color: rgb(255, 0, 0); font-size: x-small;margin-top: -20px;"></p>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="passdetail"  >
+                        <label for="">Password</label>
+                    </div>
+                    <p id="passrerror" class="error" style="color: rgb(255, 0, 0); font-size: x-small;margin-top: -20px;"></p>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button type="submit"class="signinbtn">Log in</button>
+            
+                    <div class="register">
+                        <p>Don't have a account <a href="signup.html">Register</a></p>
+                    </div>
+                </form>
+                <button type="submit"class="signinbtn" onclick="window.location.href = 'wd.html'">Go Back</button>
+
+
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
