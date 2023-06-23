@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdproject</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Oggy1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+    </style>
+    <script src="slider.js"defer></script>
+    <script src="validation.js" defer></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navcontainer">
+            <div class="navbar flex">
+                <div class="nav-logo">
+                    <img src="bglog.png" alt="">
+                </div>
+                    <ul class="flex">
+                        <li><a href="#page2" class="hover-links">Templates</a></li>
+                        <li><a href="#page3" class="hover-links">Marketplace</a></li>
+                        <li><a href="#page4" class="hover-links">Discover</a></li>
+                        <li><a href="#footerr" class="hover-links">Contact</a></li>
+                        <li><a href="#" class="hover-links">Learn</a></li>
+                    </ul>
+                </div>
+                <div class="navbtn" id="login">
+                    <a href="signin.html" class="hover-btn-sigin" >Login</a>
+                    <a href="signup.html" class="hover-btn-signup">Signup</a>
+                </div>
+    </div>
+
+         
+        
+    </nav>
+  
+    <section id="page1" class="flex">
+        <div class="text1">
+            Codify Made with <span style="color: red;font-size:90px;">&#10084;</span>
+        </div>
+        <img src="pic-5.png" alt="" class="img1">
+    </section>
+
+
+    <div class="maincontainer">
+        <main>
+            <img src="./images/Purple Modern Digital Marketing Banner.png" alt="" class="slide">
+        
+            <img src="./images/Colorful Minimalist Social Media Banner.png" alt="" class="slide">
+           
+            <button onclick="goprev()" class="leftbtn"><img src="./images/icons8-left-arrow-50.png" alt=""></button>
+            <button onclick="gonext()" class="rightbtn"><img src="./images/icons8-forward-50.png" alt=""></button>
+            <button onclick="goprev()" id="dotl" class="dot1"></button>
+            <button onclick="gonext()" id="dotr"class="dot2"></button>
+        
+        </main>
+    </div>
+    
+
+    <section id="page2" class="flex">
+        <header>
+            <div class=" header-section flex">
+                <div class="header-left texting">
+                    <h1>Originality Matters!!</h1>
+                    <br />
+                    <p> Lorem ipsum dolor sit amet consectetur a<br>
+                        dipisicing elit. Tempore fugiat, possimus nostrum<br>
+                        nemo ad consequatur obcaecati<br>
+                        quae quibusdam inventore libero?
+                    </p>
+                    <a href="artable.html" class="hover-btn-getstarted">Get started</a>
+                    <a href="carousal.html" class="hover-btn-getstarted btnright">our team</a>
+                </div>
+                <div class="header-right">
+                    <img src="details-pic-2.png" class="img2" alt="">
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="page4">
+        <div id="containerpg-4">
+            <h1>Our features</h1>
+            <div id="main-page">
+
+                <div class="cards card1">
+                    <img src="./featureimages/html5-logo-31813.png " class="item-1" alt="">
+                    <br>
+                    <span>Html</span>
+                    <br>
+                </div>
+                <div class="cards card2">
+                    <img src="./featureimages/csslogo.png" class="item-2" alt="">
+                    <br>
+                    <span>Css</span>
+                </div>
+                <div class="cards card3">
+                    <img src="./featureimages/javascript-39413.png" class="item-3" alt="">
+                    <br>
+                    <span>Node js</span>
+                </div>
+
+                <div class="cards card4">
+                    <img src="./featureimages/reactt.png" class="item-4" alt="">
+                    <br>
+                    <span>react js</span>
+                    <br>
+                </div>
+                <div class="cards card5">
+                    <img src="./featureimages/javanew.png" class="item-5" alt="">
+                    <br> <span>java</span>
+
+                </div>
+                <div class="cards card6">
+                    <img src="./featureimages/Csharp_Logo.png" class="item-6" alt="">
+
+                    <br>
+                    <span>c sharp</span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="page3" class="feature-section flex">
+        <div class="feature-header">
+            <h2 class="text-space">“It is never too late to be what you might have been.”</h2>
+            <a href="Contributer.html" class="hover-btn-getstartedvid">Contributors</a>
+        </div>
+
+        <video autoplay muted loop plays-inline id="myVideo">
+            <source src="pexels-pressmaster-3130182-3840x2160-30fps.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+    <footer id="footerr">
+        <div class="footerheadings">
+            <div class="headings">
+                <img src="./images/icons8-online-support-48.png" alt="">
+                <div class="texts">
+                <h1>Support</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="headings">
+                <img src="./images/icons8-cellphone-64.png" alt="">
+                <div class="texts">
+                <h1>Contact us 24/7</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="headings">
+                <img src="./images/icons8-trust-48.png" alt="">
+                <div class="texts">
+                <h1>100% Trust</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+            <div class="headings">
+                <img src="./images/icons8-payment-48.png" alt="">
+                <div class="texts">
+                <h1>100% Secure Payment</h1>
+                    
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footercontent">
+            <div class="columns">
+                <h1>Support</h1>
+                <br>
+                <ul>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Unsubscribe</a></li>
+                    <li><a href="">Reservations</a></li>
+    
+                </ul>
+            </div>
+            <div class="columns">
+                <h1>Mobile</h1>
+                <br>
+                <ul>
+                    <li><a href="#">Magneto</a></li>
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">Prestashop</a></li>
+                    <li><a href="#">Cs cart</a></li>
+                    <li><a href="#">Virtualmart</a></li>
+                </ul>
+            </div>
+            <div class="columns">
+                <h1>About</h1>
+                <br>
+                <ul>
+                    <li><a href="#" >Who we are</a></li>
+                    <li><a href="#" >Career</a></li>
+                    <li><a href="#" >Events</a></li>
+                   <li> <a href="#" >Services</a></li>
+                    <li><a href="#" >Portfolio</a></li>
+    
+                </ul>
+            </div>
+            <div class="columns">
+                    <h1>stay up to date</h1>
+                    <br>
+                    <p style="color: white;">Lorem ipsum  consectetur adipisicing elit.
+                    <br>libero, quidem dolor!</p>
+                    <div class="formitems">
+                        <form action="">
+                            <input type="text"placeholder="Enter you email" class="emailsearchbar">
+                            <a class="emailbtn"><img src="./images/icons8-mail-32 (1).png" alt=""></a>
+                        </form>
+                    </div>
+                    <p style="color: white;">New UI kits or big discounts.Never spam.</p>
+                </div>
+                
+    
+    
+        </div>
+        <div style="color: rgb(212, 213, 214); border-top: 1px solid rgb(149, 146, 146);
+         margin-top: 30px;display: flex;justify-content: center; padding: 15px 0 0 0; letter-spacing: 1px;">
+
+            <small>Copyright &copy; Codify. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
