@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="siginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+                <h2>Codify</h2>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Sign-UP</a></li>
+            <li><a href="">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <section class="login">
+        <div class="card">
+            <div class="img">
+                <img src="./images/user.png" alt="">
+            </div>
+            <form action="" method="get" onsubmit="return validation()">
+
+                <div>
+                    <label for="username"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="username">
+                </div>
+                <br>
+                <div>
+                    <label for="password"><i class="fa-solid fa-key"></i></label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <button type="submit" onclick="validation()">Submit</button>
+                </div>
+            </form>
+
+            <div class="signup">
+                <a href="">Sign Up</a>
+                <a href="">Fogot Password?</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
