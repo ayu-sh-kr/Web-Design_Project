@@ -4,6 +4,9 @@
     letter-spacing: 2px;
 }
 
+body{
+    background: #24242f;
+}
 nav{
     position: fixed;
     width: 90vw;
